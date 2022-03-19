@@ -1,0 +1,149 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main{
+    padding: 20px;
+}
+
+.card1, .card2{
+    background: var(--Dark-Blue);
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 335px;
+}
+
+.card2{
+    display: none;
+}
+
+h1{
+    color: var(--White);
+    font-size: 22px;
+}
+
+p{
+    color: var(--Light-Grey);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsla(216, 12%, 54%, 10%);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.btt{
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsla(216, 12%, 54%, 10%);
+    color: var(--Medium-Grey);
+}
+
+.btt:hover{
+    background: var(--Orange);
+    color: var(--White);
+}
+
+.card1 h1{
+    margin: 20px 0;
+}
+
+.submit{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: var(--Orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.submit:hover{
+    color: var(--Orange);
+    background: var(--White);
+}
+
+.illustration{
+    text-align: center;
+}
+
+.d1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: hsla(216, 12%, 54%, 10%);
+    border-radius: 50px; 
+    width: 200px;
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+.d1 p{
+    color: var(--Orange);
+}
+
+
+.card2 p{
+    margin: 20px 0 0;
+}
+
+.d1 p{
+    margin: 0;
+}
+
+.clicked{
+    background: var(--Light-Grey);
+    color: var(--White);
+}
